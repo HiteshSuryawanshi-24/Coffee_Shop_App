@@ -1,0 +1,2 @@
+# Coffee_Shop_App
+This Project Contains Two Different Users Owner and Customer in which Owner is Responsible to manage Coffee Shop Details like Add New Items, Update Item, Delete Item and also Can View Incoming Orders as well as Accept the Order also.  Customer Can Register the System and Login the App by using It's User Name and Password. Customer Can also make the Order and Can View Order History also.  The Application is Developed Using Android Studio IDE along with 000Webhost Webservice which handles All the Online Data Mechanism by using MySQL Database Server.
