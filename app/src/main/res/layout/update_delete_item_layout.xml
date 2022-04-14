@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+<!---
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgItem"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:src="@drawable/coffeecup"></ImageView>
+            -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Name:"
+            android:id="@+id/txtIName"
+            android:textColor="@color/purple_700"
+            android:textSize="17dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtIPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/rsnn"
+            android:fontFamily="sans-serif-black"
+
+            android:text="Price :"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="20sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/edit"></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

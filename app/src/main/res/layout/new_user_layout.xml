@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The Name :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The Mobile No :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="number"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The City :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtCity"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The Gender :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:inputType="text"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The User Name :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtUserName"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter The PassWord :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtUserPassword"
+                    android:fontFamily="sans-serif-black"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9F6206"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="UserRegister"
+                    android:text="SUBMIT"></Button>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9F6206"
+                    android:fontFamily="sans-serif-black"
+                    android:text="CANCEL"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

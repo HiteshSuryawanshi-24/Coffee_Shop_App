@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="350dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaddItem"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/change"
+            android:background="@android:color/transparent"
+            android:textColor="#9F6206"
+            android:fontFamily="sans-serif-black"
+            android:onClick="addItem"
+            android:text="ADD Item"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+           android:layout_weight="1"
+            android:drawableTop="@drawable/updatet"
+            android:background="@android:color/transparent"
+            android:textColor="#9F6206"
+            android:onClick="updateItem"
+            android:fontFamily="sans-serif-black"
+            android:text="UPDATE"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnViewOrders"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/view"
+            android:background="@android:color/transparent"
+            android:textColor="#9F6206"
+            android:onClick="viewOrders"
+            android:fontFamily="sans-serif-black"
+            android:text="VIEW ORDERS"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnDelete"
+            android:drawableTop="@drawable/delete"
+            android:background="@android:color/transparent"
+            android:onClick="deleteItem"
+            android:textColor="#9F6206"
+            android:fontFamily="sans-serif-black"
+            android:text="DELETE"></Button>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

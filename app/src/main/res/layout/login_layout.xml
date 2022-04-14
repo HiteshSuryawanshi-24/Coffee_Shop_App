@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Select User Type :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+
+    <Spinner
+        android:id="@+id/spnUType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"></Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter The User Name :">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter The Password :">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUserPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="userLogin"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9F6206"
+            android:fontFamily="sans-serif-black"
+            android:text="LOGIN"></Button>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9F6206"
+            android:fontFamily="sans-serif-black"
+            android:text="CANCEL"></Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNewUser"
+        android:text="New User Registration.."
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="newUserRegistration"
+        android:gravity="right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+
+</LinearLayout>

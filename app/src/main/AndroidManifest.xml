@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infogalaxy.coffeeshop">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoffeeShop">
+        <activity
+            android:name=".Admin_Home_Acitvity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login_Activity"></activity>
+        <activity android:name=".New_User_Acitvity"></activity>
+        <activity android:name=".Add_Item_Acivity"></activity>
+        <activity android:name=".Update_Delete_Item_Acivity"></activity>
+        <activity android:name=".Customer_Home_Activity"></activity>
+        <activity android:name=".Place_Order_Activity"></activity>
+        <activity android:name=".View_Order_Activity"></activity>
+    </application>
+
+</manifest>

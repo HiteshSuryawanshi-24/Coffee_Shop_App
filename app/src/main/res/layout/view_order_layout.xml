@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="SrNo :"
+        android:id="@+id/txtSrNo"
+        android:layout_gravity="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_weight="6">
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Name:"
+            android:id="@+id/txtIName"
+            android:textColor="@color/purple_700"
+            android:textSize="17dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Mobile No :"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/rsnn"
+            android:fontFamily="sans-serif-black"
+            android:text="Total :  "
+            android:layout_margin="5dp"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:id="@+id/txtDate"
+                android:layout_height="wrap_content"
+                android:text="Date"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:text="Time :"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:weightSum="3">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="ACCEPT"
+                android:id="@+id/btnAccept"
+                android:layout_weight="1"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
